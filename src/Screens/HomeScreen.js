@@ -6,18 +6,9 @@ export default function HomeScreen() {
     return (
         <View>
             <View>
-                <Text>HomeScreen</Text>
-                <Text>HomeScreen</Text>
-                <Text>HomeScreen</Text>
-                <Text>HomeScreen</Text>
-                <Text>HomeScreen</Text>
-                <Text>HomeScreen</Text>
-                <Text>HomeScreen</Text>
-                <Text>HomeScreen</Text>
-                <Text>HomeScreen</Text>
-                <Text>HomeScreen</Text>
-                <Text>HomeScreen</Text>
-                <Text>HomeScreen</Text>
+                <Text>MyTinerary</Text>
+                <Text>Find your perfect trip, designed by insiders who know and love their cities!</Text>
+                <Text>Get Started!</Text>
             </View>
         </View>
     )
@@ -25,9 +16,9 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
-  });
+});
