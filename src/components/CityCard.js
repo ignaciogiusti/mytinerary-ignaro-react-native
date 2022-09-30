@@ -15,36 +15,32 @@ import { useGetAllCitiesQuery } from '../features/citiesAPI';
 // };
 export default function CityCard() {
 
-    const { 
+    const {
         data: cities,
         error,
         isLoading,
         isSuccess,
         isFailed
     } = useGetAllCitiesQuery()
-    
+
 
     return (
         <>
             <View className='citiesPageContainer'>
                 {cities.map((city) => (
                     // <LinkRouter key={city._id} to={`/citydetails/${city._id}`}>
-                        <View className='City-container'>
-                            <img className="City-img" src={city.photo} />
-                            <h3 className='City-text text-center'>{city.city}</h3>
-                        </View>
+                    <View >
+                        <Image resizeMode='cover' style={{
+                            width: 300,
+                            height: 300,
+                            margin: 12
+                        }} source={{ uri: city.photo }} />
+                        <Text style={styles.text}>{city.city}</Text>
+                    </View>
                     // </LinkRouter>
                 ))}
             </View>
         </>
-    )
-    return (
-        <View style={styles.container}>
-            <Image source={city.photo} resizeMode="cover" style={styles.test} />
-            <View style={styles.paddingText}>
-                <Text style={styles.text}>{city.city}</Text>
-            </View>
-        </View>
     )
 }
 
@@ -55,6 +51,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#f5f5f5',
         height: '500%',
         width: '95%',
+    },
+    cityContainer: {
+        backgroundColor: '#f5f5f5',
+        marginBottom: 10
     },
     text: {
         textAlign: 'center',
