@@ -5,6 +5,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { NavigationContainer, DrawerActions } from '@react-navigation/native';
 import { ScrollView, StyleSheet, Text, View, Image } from 'react-native';
 import citiesAPI from './redux/citiesAPI';
+import store from '../mitinerary-alessandro-giusti/src/store';
 import DrawerNavigator from './src/Navigation/Drawer';
 
 export default function App() {
@@ -20,7 +21,7 @@ export default function App() {
 //   )
 // }
 
-    // <Provider /* store={reduxStore} */>
+    <Provider store={store} >
       <NavigationContainer>
         <DrawerNavigator />
       </NavigationContainer>
