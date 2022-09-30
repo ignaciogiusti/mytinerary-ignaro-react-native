@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
+import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 import urlAPI from '../API'
 
 const usersAPI = createApi({
@@ -14,7 +14,7 @@ const usersAPI = createApi({
     endpoints: (builder) => ({
         createUser: builder.query({
             query: (user) => ({
-                url: '/auth/signup/',
+                url: '/auth/signup/', 
                 method: 'POST',
                 body: user
             })
@@ -24,4 +24,4 @@ const usersAPI = createApi({
 
 export default usersAPI
 
-export const { useCreateUserQuery } = usersAPI
+export const {useCreateUserQuery} = usersAPI

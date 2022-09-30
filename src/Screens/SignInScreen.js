@@ -5,7 +5,6 @@ import { ScrollView, StyleSheet, Text, SafeAreaView, View, Image, TextInput, Ima
 export default function SignInScreen() {
   const [email, onChangeMail] = React.useState("");
   const [password, onChangePassword] = React.useState("");
-  
 
   return (
     <ImageBackground source={backgroundScreens} resizeMode="cover" style={{ width: '100%', height: '105%' }} >
