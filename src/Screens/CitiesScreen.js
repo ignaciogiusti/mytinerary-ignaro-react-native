@@ -6,6 +6,7 @@ import React, { useState, useEffect } from 'react'
 import { useGetAllCitiesQuery } from '../features/citiesAPI';
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet, Text, View, Image } from 'react-native';
+import { TextInput } from 'react-native-gesture-handler';
 
 export default function CitiesScreen() {
     const [search, setSearch] = useState("")
@@ -20,12 +21,12 @@ export default function CitiesScreen() {
             <ScrollView>
                 <View className='Main-Cities'>
                     <View className='Search-Cities'>
-                        <input className='Input-Cities' type="text" name="" placeholder=' Search by city...' onChange={(city) => { setSearch(city.target.value) }} />
+                        <TextInput className='Input-Cities' type="text" name="" placeholder=' Search by city...' onChange={(city) => { setSearch(city.target.value) }} />
                     </View>
                     <View className='citiesPageContainer'>
                         {cities?.response?.map((city) => (
                                 <View className='City-container'>
-                                    <img className="City-img" src={city.photo} />
+                                    <img className="City-Image" src={city.photo} />
                                     <h3 className='City-text text-center'>{city.city}</h3>
                                 </View>
                         ))}
@@ -46,7 +47,7 @@ export default function CitiesScreen() {
 // import { StatusBar } from 'expo-status-bar';
 // import { ScrollView, StyleSheet, Text, View, Image } from 'react-native';
 
-// // El onChange es una función de tipo "escuchador" que se va a actualizar cada vez que el input cambie
+// // El onChange es una función de tipo "escuchador" que se va a actualizar cada vez que el TextInput cambie
 
 // export default function Cities() {
 //     const [search, setSearch] = useState("")
