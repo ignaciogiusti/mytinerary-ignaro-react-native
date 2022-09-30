@@ -10,7 +10,6 @@ import DrawerNavigator from './src/Navigation/Drawer';
 
 export default function App() {
   return (
-
     <Provider store={store} >
       <NavigationContainer>
         <DrawerNavigator />
