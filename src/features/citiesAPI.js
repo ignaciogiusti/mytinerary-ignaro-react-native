@@ -1,5 +1,5 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import urlAPI from '../API';
+import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
+import urlAPI from '../API'
 
 const citiesAPI = createApi({
     reducerPath: "citiesAPI",
@@ -20,4 +20,4 @@ const citiesAPI = createApi({
 
 export default citiesAPI
 
-export const { useGetAllCitiesQuery } = citiesAPI
+export const {useGetAllCitiesQuery} = citiesAPI
