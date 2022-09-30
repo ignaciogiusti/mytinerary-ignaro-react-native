@@ -30,7 +30,11 @@
     "react-native-screens": "~3.15.0",
     "react-native-web": "~0.18.7",
     "react-redux": "^8.0.4",
+    "react-router-dom": "^6.4.1",
+    "react-router-native": "^6.4.1",
     "redux": "^4.2.0",
+    "root": "^3.2.0",
+    "sharp-cli": "^3.0.0",
     "tunnel": "^0.0.6"
   },
   "devDependencies": {
