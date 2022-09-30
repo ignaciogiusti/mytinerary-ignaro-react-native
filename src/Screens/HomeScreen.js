@@ -8,7 +8,7 @@ import { ScrollView, StyleSheet, Text, View, Image, ImageBackground } from 'reac
 export default function HomeScreen() {
     return (
         <View>
-            <ImageBackground source={backgroundHome} resizeMode="cover" style={{ width: '100%', height: '140%' }} >
+            <ImageBackground source={backgroundHome} resizeMode="cover" style={{ width: '100%', height: '1000px' }} >
                 <View style={styles.container}>
                     <View style={{ alignItems: 'center' }}>
                         <Text style={styles.title}>My<Text style={styles.titleOrange}>Tinerary</Text></Text>
