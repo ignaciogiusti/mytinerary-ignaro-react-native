@@ -3,7 +3,7 @@
 import CityCard from '../components/CityCard';
 import React, { useState, useEffect } from 'react'
 // import { Link as LinkRouter } from 'react-router-dom';
-import { useGetAllCitiesQuery } from '../../redux/citiesAPI';
+import { useGetAllCitiesQuery } from '../features/citiesAPI';
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet, Text, View, Image } from 'react-native';
 
