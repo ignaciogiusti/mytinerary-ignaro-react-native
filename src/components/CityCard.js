@@ -7,6 +7,7 @@ const city = {
 };
 export default function CityCard() {
     return (
+        // {cities?.map((val, key) => (
         <View style={styles.container}>
             <Image source={city.photo} resizeMode="cover" style={styles.test} />
             <View style={styles.paddingText}>
