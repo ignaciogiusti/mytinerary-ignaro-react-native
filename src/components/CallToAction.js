@@ -1,13 +1,15 @@
 import React from 'react';
 import { Text, View, StyleSheet, Pressable } from 'react-native';
 
-export default function Button(props) {
-    const { onPress, title = 'Get Started!' } = props;
+export default function CallToAction(/* navigation */) {
+    const onPressCities = () => {
+        navigation.navigate('Cities')
+    }
 
     return (
         <View>
-            <Pressable style={styles.button} onPress={onPress}>
-                <Text style={styles.text}>{title}</Text>
+            <Pressable style={styles.button} onPress={onPressCities}>
+                <Text style={styles.text} >Get Started!</Text>
             </Pressable>
         </View>
     );
